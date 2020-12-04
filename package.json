@@ -1,5 +1,5 @@
 {
-  "name": "react-excel-reader",
+  "name": "react-nextjs-excel-reader",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
   "dependencies": {
     "next": "10.0.3",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "xlsx": "^0.16.9"
   }
 }

@@ -1,16 +1,120 @@
 html,
-body {
+body,
+#__next {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc857;
+  color: #2e4052;
+  padding: 0 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+h1 {
+  margin: 2em 0px 1em;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #412234;
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  margin-right: 8px;
+  color: #412234;
+  font-size: 24px;
+}
+
+input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.button {
+  cursor: pointer;
+  padding: 1em 2.5em;
+  border-radius: 4px;
+  margin-top: 16px;
+  transition: all 250ms ease-in;
+  font-weight: bold;
+  border: none;
+}
+
+.file {
+  background-color: #bdd9bf;
+}
+
+.file:hover {
+  background-color: #769177;
+}
+
+.switch {
+  background-color: #723257;
+  color: white;
+}
+
+.switch:hover {
+  background-color: #412234;
+}
+
+.table,
+.json {
+  width: 100%;
+  max-width: 1200px;
+  overflow: auto;
+  margin: 32px;
+}
+
+.json {
+  background-color: #2e4052;
+  color: white;
+  border-radius: 4px;
+  padding: 16px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+table {
+  width: 100%;
+  background-color: #2e4052;
+  color: white;
+  border-radius: 8px;
+}
+
+th {
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+}
+
+tbody {
+  font-weight: 400;
+}
+
+tr:nth-of-type(even) {
+  background-color: #585e64;
+}
+
+td {
+  padding: 4px 8px;
 }
